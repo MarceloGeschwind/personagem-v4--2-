@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Cadastre uma Personagem!</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+
+        <div id="mensagemErro" class="alert alert-danger d-none" role="alert">
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+
+                <h1 class="mb-4">Cadastro de Personagem</h1>
+
+                <div id="exibicaoDePersonagem">
+                    <h2 id="nomeCampo"></h2>
+                    <h3 id="emailCampo"></h3>
+                </div>
+
+                <form id="form">
+
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">
+                            Nome
+                        </label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="nomeInput"
+                            placeholder="Digite o nome do personagem">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">
+                            Email
+                        </label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="emailInput"
+                            placeholder="Digite o email do personagem">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="idade" class="form-label">
+                            Idade
+                        </label>
+
+                        <input
+                            type="number"
+                            class="form-control"
+                            id="anoInput"
+                            placeholder="Digite a idade">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="classe" class="form-label">
+                            Classe
+                        </label>
+
+                        <select id="classeInput" class="form-select">
+
+                            <option value="">
+                                Escolha uma classe
+                            </option>
+
+                            <option value="Guerreiro">
+                                Guerreiro(a)
+                            </option>
+
+                            <option value="Mago">
+                                Mago(a)
+                            </option>
+
+                            <option value="Arqueiro">
+                                Arqueiro(a)
+                            </option>
+
+                            <option value="Ladino">
+                                Ladino(a)
+                            </option>
+
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="descricao" class="form-label">
+                            Descrição
+                        </label>
+
+                        <textarea
+                            id="descInput"
+                            class="form-control"
+                            rows="4"
+                            placeholder="Descreva seu personagem" ></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="avatarUrl" class="form-label">
+                            URL da imagem
+                        </label>
+
+                        <input
+                            id="avatarUrlInput"
+                            class="form-control"
+                            placeholder="Cole aqui a url da imagem" >
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <button
+                                type="submit"
+                                class="btn btn-primary">
+                                Cadastrar personagem
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
